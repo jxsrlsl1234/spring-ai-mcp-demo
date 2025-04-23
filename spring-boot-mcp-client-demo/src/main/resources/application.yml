@@ -1,0 +1,17 @@
+server:
+  port: 9999
+spring:
+  ai:
+    model:
+      chat: anthropic
+    anthropic:
+      api-key: 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
+      chat:
+        options:
+          model: claude-3-7-sonnet-20250219
+    mcp:
+      client:
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8080  #????
