@@ -5,7 +5,7 @@ spring:
     model:
       chat: anthropic
     anthropic:
-      api-key: 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
+      api-key: ###
       chat:
         options:
           model: claude-3-7-sonnet-20250219
