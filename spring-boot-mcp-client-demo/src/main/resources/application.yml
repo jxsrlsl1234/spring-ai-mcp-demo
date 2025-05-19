@@ -10,8 +10,6 @@ spring:
           connections:
             my-weather-server:
               url: http://localhost:8080
-    moonshot:
-      api-key: ${MOOMSHOT_KEY}
     ollama:
       chat:
         options:
