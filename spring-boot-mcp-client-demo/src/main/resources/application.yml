@@ -2,16 +2,17 @@ server:
   port: 9999
 spring:
   ai:
-    model:
-      chat: anthropic
-    anthropic:
-      api-key: ###
-      chat:
-        options:
-          model: claude-3-7-sonnet-20250219
     mcp:
       client:
+        toolcallback:
+          enabled : true
         sse:
           connections:
-            server1:
-              url: http://localhost:8080  #????
+            my-weather-server:
+              url: http://localhost:8080
+    moonshot:
+      api-key: ${MOOMSHOT_KEY}
+    ollama:
+      chat:
+        options:
+          model: llama3.2
